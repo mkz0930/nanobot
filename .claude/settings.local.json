@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\ndocs: 添加完整学习文档和开发指南\n\n- 添加 CLAUDE.md 开发指南\n- 创建 10 阶段学习路线（doc/ 目录）\n  - 00-学习路线图.md: 学习路径总览\n  - 01-环境搭建与初体验.md: 安装配置入门\n  - 02-理解核心概念.md: Agent、Tools、Skills 等核心概念\n  - 03-工具系统深入.md: 工具实现和自定义\n  - 04-技能系统实践.md: 技能开发实践\n  - 05-Provider系统掌握.md: LLM Provider 配置\n  - 06-Channel集成入门.md: 聊天平台集成\n  - 07-消息总线与架构.md: 事件驱动架构\n  - 08-高级功能开发.md: 子代理、定时任务等\n  - 09-生产环境部署.md: Docker 部署和安全\n  - 10-系统扩展与优化.md: 性能优化和贡献\n- 添加 doc/学习指南.md 综合指南\n- 添加 doc/README.md 文档索引\n- 更新 README.md 中的 GitHub 链接为新仓库地址\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(pip --version:*)",
+      "Bash(venvScriptsactivate)",
+      "Bash(pip install:*)",
+      "Bash(./venv/Scripts/activate)",
+      "Bash(nanobot --version:*)",
+      "Bash(./venv/Scripts/python.exe -m pip install -e .)",
+      "Bash(./venv/Scripts/python.exe -m nanobot.cli.commands agent:*)"
+    ]
+  }
+}

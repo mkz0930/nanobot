@@ -1,5 +1,5 @@
 """
-消息总线的事件类型定义
+消息总线的事件类型定义 (阶段 1-2 核心文件)
 
 这个模块定义了 nanobot 消息总线中使用的核心数据结构：
 - InboundMessage: 从聊天平台接收的消息
@@ -81,5 +81,3 @@ class OutboundMessage:
     reply_to: str | None = None  # 回复的消息 ID（如果是回复消息）
     media: list[str] = field(default_factory=list)  # 要发送的媒体文件 URL
     metadata: dict[str, Any] = field(default_factory=dict)  # 平台特定的发送选项
-
-
